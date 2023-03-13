@@ -45,7 +45,6 @@ int main(){
     solution->getRandom(); // return 3
 // getRandom() should return either 1, 2, or 3 randomly. Each element should have equal probability of returning.
 }
-
 /**
  * Your Solution object will be instantiated and called as such:
  * Solution* obj = new Solution(head);

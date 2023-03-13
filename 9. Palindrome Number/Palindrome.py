@@ -1,4 +1,4 @@
-import math
+import math //math for floor
 class Solution:
     def isPalindrome(self, x: int) -> bool:
         numLength = len(str(x))

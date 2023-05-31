@@ -3,13 +3,12 @@ class Solution:
         if numRows==1 or numRows >= len(s):
             return s
         i=0
-        col=0
-        strTable=[[] for _ in range(numRows)]
-        while (i<len(s)):
-            strTable[col].append(s[i])
-            col = col+1 if (i//(numRows-1))%2==0 else col-1
-            i+=1
-        return "".join(["".join(row) for row in strTable])
+        row=0
+        strTable=['' for i in range(numRows)]
+        for i, c in enumerate(s):
+            strTable[row]+=c
+            row = row+1 if (i//(numRows-1))%2==0 else row-1
+        return "".join(strTable)
 
             
 sol = Solution()

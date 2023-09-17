@@ -1,5 +1,6 @@
 from typing import List
 from heapq import heappop, heappush
+import math
 
 class Solution:
     def minimumEffortPath(self, heights: List[List[int]]) -> int:
@@ -22,5 +23,3 @@ class Solution:
                     if new_effort < dist[nx][ny]:
                         dist[nx][ny] = new_effort
                         heappush(minHeap, (new_effort, nx, ny))
-
-sol = Solution()

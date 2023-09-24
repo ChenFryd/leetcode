@@ -1,4 +1,6 @@
 #include <vector>
+#include <iostream>
+using namespace std;
 
 class Solution {
 public:
@@ -19,3 +21,9 @@ public:
         return currRow[query_glass];
     }
 };
+
+int main(){
+    Solution sol;
+    cout << sol.champagneTower(2,1,1) << endl;
+
+}
